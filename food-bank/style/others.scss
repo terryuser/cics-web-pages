@@ -1,0 +1,32 @@
+.cics-image-container {
+  margin-left: -10px;
+  margin-right: -10px;
+
+  .cics-image-item-wrapper {
+    padding: 5px 10px;
+
+    @include mobile-n-tablet {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  figure {
+    width: 100%;
+  }
+
+  &.align-center {
+    .cics-image-item-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+  }
+
+  figcaption {
+    margin-top: 8px;
+    text-align: center;
+    font-size: #{$page-font-size + 2px};
+  }
+}
