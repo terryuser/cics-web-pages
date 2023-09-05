@@ -1,0 +1,123 @@
+$spacing-gap: 5px;
+
+.cics-padding-1 {
+  padding: 5px;
+}
+
+.cics-px-1 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.cics-px-2 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.cics-px-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@for $i from 0 through 10 {
+  .cics-p-#{$i} {
+    padding: #{$i * $spacing-gap};
+
+    @include mobile-only {
+      @if $i < 3 {
+        padding: $spacing-gap;
+      } @else {
+        padding: #{($i - 3) * $spacing-gap};
+      }
+    }
+  }
+
+  .cics-px-#{$i} {
+    padding-left: #{$i * $spacing-gap};
+    padding-right: #{$i * $spacing-gap};
+
+    @include mobile-only {
+      @if $i < 3 {
+        padding-left: $spacing-gap;
+        padding-right: $spacing-gap;
+      } @else {
+        padding-left: #{($i - 3) * $spacing-gap};
+        padding-right: #{($i - 3) * $spacing-gap};
+      }
+    }
+  }
+
+  .cics-py-#{$i} {
+    padding-top: #{$i * $spacing-gap};
+    padding-bottom: #{$i * $spacing-gap};
+
+    @include mobile-only {
+      @if $i < 3 {
+        padding-top: $spacing-gap;
+        padding-bottom: $spacing-gap;
+      } @else {
+        padding-top: #{($i - 3) * $spacing-gap};
+        padding-bottom: #{($i - 3) * $spacing-gap};
+      }
+    }
+  }
+
+  .cics-m-#{$i} {
+    margin: #{$i * $spacing-gap};
+
+    @include mobile-only {
+      @if $i < 3 {
+        margin: $spacing-gap;
+      } @else {
+        margin: #{($i - 3) * $spacing-gap};
+      }
+    }
+  }
+
+  .cics-mx-#{$i} {
+    margin-left: #{$i * $spacing-gap};
+    margin-right: #{$i * $spacing-gap};
+
+    @include mobile-only {
+      @if $i < 3 {
+        margin-left: $spacing-gap;
+        margin-right: $spacing-gap;
+      } @else {
+        margin-left: #{($i - 3) * $spacing-gap};
+        margin-right: #{($i - 3) * $spacing-gap};
+      }
+    }
+  }
+
+  .cics-my-#{$i} {
+    margin-top: #{$i * $spacing-gap};
+    margin-bottom: #{$i * $spacing-gap};
+
+    @include mobile-only {
+      @if $i < 3 {
+        margin-top: $spacing-gap;
+        margin-bottom: $spacing-gap;
+      } @else {
+        margin-top: #{($i - 3) * $spacing-gap};
+        margin-bottom: #{($i - 3) * $spacing-gap};
+      }
+    }
+  }
+}
+
+.cics-margin-y-1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  @include mobile-only {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.cics-margin-y-mobile-1 {
+  @include mobile-only {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,39 @@
+.cics-float-left {
+  float: left;
+}
+
+.cics-float-right {
+  float: right;
+}
+
+.cics-float-lg-left {
+  float: left;
+
+  @include mobile-n-tablet {
+    float: none;
+  }
+}
+
+.cics-float-lg-right {
+  float: right;
+
+  @include mobile-n-tablet {
+    float: none;
+  }
+}
+
+.cics-float-md-left {
+  float: left;
+
+  @include mobile-only {
+    float: none;
+  }
+}
+
+.cics-float-md-right {
+  float: right;
+
+  @include mobile-only {
+    float: none;
+  }
+}

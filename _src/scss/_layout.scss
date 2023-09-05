@@ -1,0 +1,23 @@
+.cics-flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.cics-flex-lg-nowrap {
+  flex-wrap: nowrap;
+
+  @include mobile-n-tablet {
+    flex-wrap: wrap;
+  }
+}
+
+.cics-layout-flex {
+  display: flex;
+}
+
+.cics-layout-lg-flex {
+  display: flex;
+
+  @include mobile-n-tablet {
+    display: block;
+  }
+}
