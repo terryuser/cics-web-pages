@@ -105,6 +105,13 @@ $spacing-gap: 5px;
   }
 }
 
+.cics-px-tablet-0 {
+  @include tablet-only {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .cics-margin-y-1 {
   margin-top: 15px;
   margin-bottom: 15px;

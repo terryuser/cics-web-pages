@@ -1,0 +1,77 @@
+.cics-involved-img {
+  height: 300px;
+}
+
+.cics-team-member-figure {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  max-width: 480px;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @include tablet-only {
+    max-width: 440;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  @include mobile-only {
+    max-width: unset;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @include mobile-only {
+    display: block;
+    flex-wrap: unset;
+  }
+
+  figure {
+    width: 50%;
+    padding: 10px 20px;
+
+    @include tablet-only {
+      width: 50%;
+      padding: 5px 10px;
+    }
+
+    @include mobile-only {
+      width: 100%;
+      padding: 10px 0px;
+    }
+  }
+
+  .cics-img-wrapper {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    @include tablet-only {
+      width: 200px;
+      height: 200px;
+    }
+
+    @include mobile-only {
+      width: 100%;
+      height: auto;
+      max-height: 200px;
+    }
+  }
+
+  img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+
+    @include mobile-only {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  figcaption {
+    text-align: center;
+  }
+}
